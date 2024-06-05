@@ -1,8 +1,10 @@
-# Rewindcss::Rails
-Short description and motivation.
+# rewindcss-rails
+Hook up Deadfire, a minimal css pre-processor and normalize.css to your application.
 
 ## Usage
-How to use my plugin.
+Run the command to setup your application.
+
+`rake app:install`
 
 ## Installation
 Add this line to your application's Gemfile:
