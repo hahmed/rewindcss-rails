@@ -1,10 +1,10 @@
 # rewindcss-rails
-Hook up Deadfire, a minimal css pre-processor and normalize.css to your application.
+Hook up [Deadfire](https://github.com/hahmed/deadfire), a minimal css pre-processor and normalize.css to your application with the new 
+asset pipeline, Propshaft.
 
 ## Usage
-Run the command to setup your application.
 
-`rake app:install`
+TODO:
 
 ## Installation
 Add this line to your application's Gemfile:
@@ -22,6 +22,9 @@ Or install it yourself as:
 ```bash
 $ gem install rewindcss-rails
 ```
+
+Then run the rake command to setup your application:
+`rake app:install`
 
 ## Contributing
 Contribution directions go here.
