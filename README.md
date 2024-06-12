@@ -7,8 +7,10 @@ Hook up [Deadfire](https://github.com/hahmed/deadfire), a minimal css pre-proces
 To setup your application with the base css run `bundle exec rake rewindcss:install`.
 
 ### Purecss
-To setup your application with [pure.css](https://purecss.io/) (responsive version) run `bundle exec rake rewindcss:install`.
+To setup your application with [pure.css](https://purecss.io/) (responsive version) run `bundle exec rake rewindcss:purecss`.
 
+### Bulma
+To setup your application with [bulma.css](https://bulma.io/) run `bundle exec rake rewindcss:bulma`.
 
 ## Installation
 Add this line to your application's Gemfile:
