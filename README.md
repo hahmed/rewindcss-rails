@@ -3,7 +3,12 @@ Hook up [Deadfire](https://github.com/hahmed/deadfire), a minimal css pre-proces
 
 ## Usage
 
-TODO:
+### Base
+To setup your application with the base css run `bundle exec rake rewindcss:install`.
+
+### Purecss
+To setup your application with [pure.css](https://purecss.io/) (responsive version) run `bundle exec rake rewindcss:install`.
+
 
 ## Installation
 Add this line to your application's Gemfile:
@@ -21,9 +26,6 @@ Or install it yourself as:
 ```bash
 $ gem install rewindcss-rails
 ```
-
-Then run the rake command to setup your application:
-`bundle exec rake rewindcss:install`
 
 ## Contributing
 Contribution directions go here.

@@ -8,4 +8,9 @@ namespace :rewindcss do
   task :purecss do
     system "#{RbConfig.ruby} ./bin/rails app:template LOCATION=#{File.expand_path("../../purecss/generator.rb",  __dir__)}"
   end
+
+  desc "Install bulma"
+  task :bulma do
+    system "#{RbConfig.ruby} ./bin/rails app:template LOCATION=#{File.expand_path("../../bulma/generator.rb",  __dir__)}"
+  end
 end
