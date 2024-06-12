@@ -1,6 +1,5 @@
 # rewindcss-rails
-Hook up [Deadfire](https://github.com/hahmed/deadfire), a minimal css pre-processor and normalize.css to your application with the new 
-asset pipeline, Propshaft.
+Hook up [Deadfire](https://github.com/hahmed/deadfire), a minimal css pre-processor and normalize.css to your application with the new asset pipeline, Propshaft.
 
 ## Usage
 
@@ -24,7 +23,7 @@ $ gem install rewindcss-rails
 ```
 
 Then run the rake command to setup your application:
-`rake app:install`
+`bundle exec rake rewindcss:install`
 
 ## Contributing
 Contribution directions go here.

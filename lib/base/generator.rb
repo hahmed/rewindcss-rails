@@ -1,12 +1,16 @@
-
-# source_root File.expand_path('install', __dir__)
-
-say "Installing rewindcss-rails"
+say "Installing base rewindcss"
 
 copy_file "#{__dir__}/application.css", "app/assets/stylesheets/application.css"
 copy_file "#{__dir__}/normalize.css", "app/assets/stylesheets/normalize.css"
 
-copy_file "#{__dir__}/initializers/deadfire.rb", "config/initializers/deadfire.rb"
+if Rails.application.config.try(:action_text).present?
+  copy_file "#{__dir__}/../shared/trix.css", "app/assets/stylesheets/trix.css"
+  insert_into_file "app/assets/stylesheets/application.css", <<~CSS, after: /^@import "normalize";/
+    \n@import "trix";
+  CSS
+end
+
+copy_file "#{__dir__}/../shared/initializers/deadfire.rb", "config/initializers/deadfire.rb"
 
 APPLICATION_LAYOUT_PATH = Rails.root.join("app/views/layouts/application.html.erb")
 
@@ -16,4 +20,3 @@ if APPLICATION_LAYOUT_PATH.exist?
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
   ERB
 end
-
